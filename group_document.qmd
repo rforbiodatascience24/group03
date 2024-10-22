@@ -41,13 +41,6 @@ pca_fit <- biopsy |>
 ```
 
 ```{r}
-pca_fit <- biopsy |> 
-  select(where(is.numeric)) |>
-  scale() |> 
-  prcomp() 
-```
-
-```{r}
 pca_fit |>
   augment(biopsy) |> 
   ggplot(aes(.fittedPC1, .fittedPC2, 
