@@ -31,17 +31,12 @@ library("cowplot")
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
-```{r}
-pca_fit <- biopsy |> 
-  select(where(is.numeric)) |> # retain only numeric columns
-  prcomp(scale = TRUE) # do PCA on scaled data
-```
+To do the PCA, we first need to remove all non-numeric columns, since the function *prcomp* does not take non-numeric inputs. The PCA is then stored in the function *pca_fit*. We also need to scale the data, to make sure that the difference in value ranges does not interfere with the analysis.
 
 ```{r}
 pca_fit <- biopsy |> 
   select(where(is.numeric)) |> # retain only numeric columns
-  scale() |> # scale data
-  prcomp() # do PCA
+  prcomp(scale = TRUE) # do PCA on scaled data
 ```
 
 ```{r}
