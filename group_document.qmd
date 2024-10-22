@@ -57,3 +57,19 @@ print("hej") #Mere kode
 ```{r}
 getwd() #mere kode
 ```
+
+## New feature
+
+Det her er ikke en god feature
+
+```{r}
+x <- "Nej"
+```
+
+```{r}
+y <- "stadig nej"
+```
+
+```{r}
+z <- 5+5
+```
