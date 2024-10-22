@@ -95,6 +95,8 @@ pca_fit |>
   theme_minimal_grid(12)
 ```
 
+It is seen on the plot, that the variables all have a negative PC1 value and most have a neutral PC2 value, except for "Mitosis" which has a positive PC2.
+
 ## Variance explained by each PC
 
 To see the variance explained by each of the PCs, these are plotted in a boxplot. The data is stored in *pca_fit* as eigenvalues. Therefore these values are pulled from the matrix.
@@ -110,7 +112,8 @@ pca_fit |>
     labels = scales::percent_format(),
     expand = expansion(mult = c(0, 0.01))
   ) +
-  theme_minimal_hgrid(12)
+  theme_minimal_hgrid(12) + 
+  labs(x = "Percent (%)")
 ```
 
 It is seen that 65% of the variance is explained by PC1.
