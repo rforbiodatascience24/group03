@@ -32,6 +32,14 @@ Her er noget tekst
 2+2 #Og noget kode
 ```
 
+### New feature
+
+```{r}
+#mere kode
+1*2*3 + 4
+
+```
+
 ## s225051
 
 her står en title
