@@ -88,7 +88,10 @@ pca_fit |>
                arrow = arrow_style) +
   geom_text_repel(
     aes(label = column),
-    color = "cornflowerblue") +
+    point.padding = unit(0.5, "lines"),
+    box.padding = unit(0.5, "lines"),
+    segment.size =0.2,
+    color = "cornflowerblue", size = 3) +
   
   xlim(-.7, .05) + 
   ylim(-.4, 1) +
