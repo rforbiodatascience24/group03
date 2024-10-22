@@ -40,6 +40,8 @@ pca_fit <- biopsy |>
   prcomp(scale = TRUE) 
 ```
 
+## Data in PC coordinates
+
 To see how well the first two PCA components divide the data into malignant and benign, the original data is fitted onto these components and plotted.
 
 ```{r}
@@ -50,11 +52,21 @@ pca_fit |>
   geom_point(size = 1.5) +
   scale_color_manual(
     values = c(malignant = "hotpink", 
-               benign = "forestgreen")) +
-  theme_half_open(12) + background_grid()
+               benign = "forestgreen"), 
+    labels = c(malignant = "Malignant Tumor", 
+               benign = "Benign Tumor")) +
+  theme_half_open(12) + background_grid() + 
+  labs(x = "Fitted to PC1", 
+       y = "Fitted to PC2", 
+       color = "Diagnosis outcome") + 
+  theme(legend.position = "bottom")
 ```
 
-To plot the rotation matrix for the PC1 and PC2, we subtract the rotation matrix from pca_fit, and plot each of the variables from the rotation matrix against PC1 and PC2.
+The data seems to be nicely seperated into benign and malignant by the first two principal components.
+
+## Rotation matrix
+
+To plot the rotation matrix for the PC1 and PC2, we subtract the rotation matrix from *pca_fit*, and plot each of the variables from the rotation matrix against PC1 and PC2.
 
 ```{r}
 # define arrow style for plotting
@@ -82,6 +94,8 @@ pca_fit |>
   ylim(-.4, 1) +
   theme_minimal_grid(12)
 ```
+
+## Variance explained by each PC
 
 To see the variance explained by each of the PCs, these are plotted in a boxplot. The data is stored in *pca_fit* as eigenvalues. Therefore these values are pulled from the matrix.
 
