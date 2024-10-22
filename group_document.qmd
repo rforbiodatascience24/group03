@@ -22,6 +22,16 @@ her står en title
 2+3 = 5 # super seje mig
 ```
 
+## New feature
+
+lalala
+
+```{r}
+2+123=12321 # coo stuff
+```
+
+done
+
 ## s224974
 
 ## s215109
