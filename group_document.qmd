@@ -6,6 +6,24 @@ editor: visual
 
 ## s225074
 
+### New feature
+
+```{r}
+#| message: false
+
+library("tidyverse")
+
+```
+
+```{r}
+
+df <- data.frame(x=c(1,2,3),y=c(4,5,6))
+
+ggplot(df) +
+  geom_point(aes(x,y)) +
+  theme_minimal()
+```
+
 ## s225049
 
 ## s225051
