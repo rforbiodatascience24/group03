@@ -40,6 +40,8 @@ pca_fit <- biopsy |>
   prcomp(scale = TRUE) 
 ```
 
+To see how well the first two PCA components divide the data into malignant and benign, the original data is fitted onto these components and plotted.
+
 ```{r}
 pca_fit |>
   augment(biopsy) |> 
@@ -52,11 +54,7 @@ pca_fit |>
   theme_half_open(12) + background_grid()
 ```
 
-```{r}
-# extract rotation matrix
-pca_fit |>
-  tidy(matrix = "rotation")
-```
+To plot the rotation matrix for the PC1 and PC2, we subtract the rotation matrix from pca_fit, and plot each of the variables from the rotation matrix against PC1 and PC2.
 
 ```{r}
 # define arrow style for plotting
