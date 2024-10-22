@@ -16,6 +16,12 @@ Her er noget tekst
 
 ## s225051
 
+her står en title
+
+```{r}
+2+3 = 5 # super seje mig
+```
+
 ## s224974
 
 ## s215109
