@@ -32,6 +32,14 @@ Her er noget tekst
 2+2 #Og noget kode
 ```
 
+### New feature
+
+```{r}
+#mere kode
+1*2*3 + 4
+
+```
+
 ## s225051
 
 her står en title
@@ -39,6 +47,16 @@ her står en title
 ```{r}
 2+3 = 5 # super seje mig
 ```
+
+## New feature
+
+lalala
+
+```{r}
+2+123=12321 # coo stuff
+```
+
+done
 
 ## s224974
 
@@ -56,4 +74,20 @@ print("hej") #Mere kode
 
 ```{r}
 getwd() #mere kode
+```
+
+## New feature
+
+Det her er ikke en god feature
+
+```{r}
+x <- "Nej"
+```
+
+```{r}
+y <- "stadig nej"
+```
+
+```{r}
+z <- 5+5
 ```
