@@ -19,3 +19,17 @@ Her er noget tekst
 ## s224974
 
 ## s215109
+
+Det her er Rolfs sektion
+
+```{r}
+1-1 #noget kode
+```
+
+```{r}
+print("hej") #Mere kode
+```
+
+```{r}
+getwd() #mere kode
+```
