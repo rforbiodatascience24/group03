@@ -6,8 +6,6 @@ editor: visual
 
 ## s225074
 
-rdtfyguhi
-
 ## s225049
 
 ## s225051
