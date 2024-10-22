@@ -1,6 +1,8 @@
 ---
-title: "Lab 7: Group 03"
-format: html
+title: "Lab 7 Assignment: Group 03"
+format:
+  html:
+    embed-resources: true
 editor: visual
 ---
 
