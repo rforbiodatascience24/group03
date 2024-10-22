@@ -98,7 +98,7 @@ pca_fit |>
   theme_minimal_grid(12)
 ```
 
-It is seen on the plot, that the variables all have a negative PC1 value and most have a neutral PC2 value, except for "Mitosis" which has a positive PC2.
+It is seen on the plot, that the variables all have a negative PC1 value and most have a neutral PC2 value, except for "Mitoses" which has a positive PC2.
 
 ## Variance explained by each PC
 
