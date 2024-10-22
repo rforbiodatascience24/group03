@@ -71,7 +71,7 @@ pca_fit |>
   tidy(matrix = "rotation") |>
   pivot_wider(names_from = "PC", 
               names_prefix = "PC", 
-              values_from = "value") |>
+              values_from = "value") |
   ggplot(aes(PC1, PC2)) +
   geom_segment(xend = 0, 
                yend = 0, 
