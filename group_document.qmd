@@ -8,6 +8,12 @@ editor: visual
 
 ## s225049
 
+Her er noget tekst
+
+```{r}
+2+2 #Og noget kode
+```
+
 ## s225051
 
 ## s224974
