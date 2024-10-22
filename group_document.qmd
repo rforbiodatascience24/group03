@@ -19,11 +19,12 @@ s215109: Rolf Larsen
 ```{r}
 #| message: false
 
-library("tidyverse")
-library("broom")
-library("cowplot")
-library("ggrepel")
-
+suppressWarnings(suppressPackageStartupMessages({
+  library("tidyverse")
+  library("broom")
+  library("cowplot")
+  library("ggrepel")
+}))
 ```
 
 ## Loading and tidying data:
