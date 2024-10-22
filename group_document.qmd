@@ -83,10 +83,7 @@ pca_fit |>
   theme_minimal_grid(12)
 ```
 
-```{r}
-pca_fit |>
-  tidy(matrix = "eigenvalues")
-```
+To see the variance explained by each of the PCs, these are plotted in a boxplot. The data is stored in *pca_fit* as eigenvalues. Therefore these values are pulled from the matrix.
 
 ```{r}
 pca_fit |>
@@ -101,3 +98,5 @@ pca_fit |>
   ) +
   theme_minimal_hgrid(12)
 ```
+
+It is seen that 65% of the variance is explained by PC1.
