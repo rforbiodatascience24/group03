@@ -123,3 +123,7 @@ pca_fit |>
 ```
 
 It is seen that 65% of the variance is explained by PC1.
+
+##### New delete feature
+
+Delete this after plz
